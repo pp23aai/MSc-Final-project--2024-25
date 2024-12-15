@@ -1,68 +1,126 @@
-# License Plate Detection with YOLOv11 🚗🔍
+# MSc Final Project: License Plate Detection and Recognition with YOLOv11 🚗🔍
 
-Welcome to the GitHub repository for my MSc Final Project on **License Plate Detection**! 🎓 This project explores various preprocessing techniques and deep learning models to enhance the accuracy and efficiency of license plate detection and character recognition. The project’s primary focus is using YOLOv11 for the detection phase, while incorporating insights from state-of-the-art cNN VS OCR models for character recognition. 🤖📝
+Welcome to the **License Plate Detection and Recognition** project for my MSc Final Project. This repository showcases the development of an **Automatic License Plate Recognition (ALPR) system**, leveraging the YOLOv11 object detection framework and Optical Character Recognition (OCR) methods to identify and interpret license plates in various scenarios. 🎓
 
-## Project Overview 🌐
+---
 
-Automatic License Plate Recognition (ALPR) systems have become essential in areas such as traffic management, law enforcement, and security. 🚓🚦 This project investigates techniques to improve license plate detection, primarily by implementing YOLOv11 and experimenting with different preprocessing methods to increase model performance.
+## 🌐 Project Objectives
 
-## Objectives 🎯
+1. **License Plate Detection**:
+   - Deploy YOLOv11 to detect license plates in challenging environments (e.g., poor lighting, angles, occlusions).
+   
+2. **Character Recognition**:
+   - Apply OCR methods to read the detected license plates accurately.
 
-1. **License Plate Detection**: Using YOLOv11, a robust object detection model, to localize license plates in real-world images.
-2. **Preprocessing Techniques**: Exploring preprocessing steps, such as noise reduction, contrast enhancement, and edge detection, to optimize detection and recognition.
-3. **Character Recognition**: Applying Optical Character Recognition (OCR) techniques to read the detected license plates accurately.
+3. **Enhancing Detection Accuracy**:
+   - Incorporate preprocessing techniques like noise reduction and bounding box optimization to improve YOLOv11’s efficiency.
 
-## Project Structure 📁
+4. **Pipeline Integration**:
+   - Build a unified system for real-world license plate recognition.
 
-- `Project Management plan `: Contains information about project and timelines
-- `data/`: Contains datasets used for training and evaluation, sourced from [Roboflow](https://roboflow.com).
-- `models/`: YOLOv11 and OCR model weights and configuration files.
-- `notebooks/Yolo/results`: Jupyter notebooks for exploratory data analysis, training, and evaluation.
-- ` 
+---
 
-## Key Components 🧩
+## 📁 Repository Structure
 
-### 1. Preprocessing Techniques ⚙️
-To enhance detection and recognition accuracy, this project tests several preprocessing techniques, including:
-    
-### 2. YOLOv11 for License Plate Detection 🛣️
-YOLOv11 is employed to detect license plates in various conditions, addressing challenges such as different lighting, angles, and occlusions.
+- **`notebooks/Yolo_CNN_tesseract.ipynb`**: Jupyter Notebook demonstrating YOLOv11-based detection and OCR integration.
+- **`data/`**: Includes training, validation, and test datasets for model development.
+- **`models/`**: Pretrained YOLOv11 model weights and configuration files.
+- **`reports/`**:
+  - `Literature Review.pdf`: A detailed review of research on ALPR systems.
+  - `Methodology.pdf`: Overview of techniques employed in the project.
+  - `Final Report.pdf`: Comprehensive explanation of the project findings and results.
+- **`requirements.txt`**: Dependencies required to execute the project code.
+- **`results/`**: Visualizations of model predictions and evaluation metrics.
 
-### 3. CNN and  Optical Character Recognition (OCR) 📝
-Using OCR models to recognize and extract text from detected license plates, improving the reliability of license plate reading.
+---
 
-## Installation 🛠️
+## 🔧 Installation and Setup
 
-To set up the environment, clone the repository and install dependencies:
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/pp23aai/MSc-Final-project--2024-25.git
+   cd MSc-Final-project--2024-25
+   ```
 
-```bash
-git clone https://github.com/pp23aai/MSc-Final-project--2024-25.git
-cd MSc-Final-project--2024-25
-pip install -r requirements.txt
-```
+2. Install the dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-## Usage 💻
+ 
+---
 
-1. **Data Preprocessing**: Run preprocessing scripts to prepare the dataset.
-2. **Training**: Use YOLOv11 for license plate detection training.
-3. **Evaluation**: Evaluate model performance with test data and OCR accuracy.
+## 🚀 Usage
 
-```bash
-python src/train.py --model yolov11 --data data/dataset.yaml
-```
+### 1. Data Preprocessing
+   - Use the notebook to visualize and preprocess the dataset, ensuring it is optimized for YOLOv11.
 
-## Results 📊
+### 2. Training the YOLOv11 Model
+   - Train the model using the prepared dataset:
+     ```bash
+     python src/train.py --model yolov11 --data data/dataset.yaml
+     ```
 
-Initial results show significant improvements in detection accuracy by using advanced preprocessing techniques and the YOLOv11 model for plate localization. Further analysis is ongoing to refine OCR accuracy. 📈
+### 3. Evaluating Results
+   - Evaluate model performance and visualize detection results:
+     ```bash
+     python src/evaluate.py --model yolov11 --test data/test/
+     ```
 
-## Future Work 🚀
+### 4. Running OCR for Character Recognition
+   - Integrate OCR to read text from detected license plates.
 
-- Integrating real-time detection for live video streams. 🎥
-- Expanding dataset diversity for better generalization. 🌍
-- Experimenting with alternative OCR methods to improve character recognition accuracy. 🧠
+---
 
-## Acknowledgments 🙏
+## 🧩 Key Features
 
-This project uses datasets from [Roboflow](https://roboflow.com) and resources from the MSc course module. Special thanks to my mentors and peers for their support throughout this project. 🌟
+1. **YOLOv11-Based Detection**:
+   - Implements YOLOv11 for detecting license plates in diverse scenarios.
+
+2. **Advanced Preprocessing**:
+   - Includes noise reduction, contrast enhancement, and bounding box visualization.
+
+3. **OCR Integration**:
+   - Extracts text from detected plates using OCR for accurate character recognition.
+
+4. **Exploratory Analysis**:
+   - Visualizes dataset statistics like class distributions and bounding box dimensions.
+
+---
+
+## 📊 Results
+
+- **Detection Accuracy**:
+  - The YOLOv11 model demonstrated high accuracy in detecting license plates under various conditions.
+  
+- **Character Recognition**:
+  - Preliminary OCR results indicate promising performance in accurately reading license plate text.
+  
+- **Key Findings**:
+  - Incorporating preprocessing techniques improved detection accuracy significantly.
+
+---
+
+## 🔮 Future Work
+
+- **Real-Time Processing**:
+  - Implement live detection from video streams for traffic monitoring.
+
+- **Dataset Expansion**:
+  - Include more diverse datasets to enhance generalization capabilities.
+
+- **Advanced OCR Techniques**:
+  - Test state-of-the-art OCR models to boost recognition accuracy.
+
+---
+
+## 🙏 Acknowledgments
+
+Special thanks to:
+- [Ultralytics](https://ultralytics.com/) for the YOLO framework.
+- [Roboflow](https://roboflow.com/) for providing datasets.
+- MSc mentor ( Vandana Das ) and colleagues for their guidance and support throughout this project.
+
+ 
 
  
