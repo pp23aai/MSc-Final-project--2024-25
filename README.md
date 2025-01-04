@@ -44,3 +44,6 @@ This project implements a YOLOv11-based model for Automatic License Plate Recogn
 ```bash
 git clone https://github.com/pp23aai/MSc-Final-project--2024-25.git
 cd MSc-Final-project--2024-25
+
+
+collab : https://colab.research.google.com/drive/1KOz0ueNLlAwu7PRFzWBQ9QfUTQQNEcgP#scrollTo=Uk_cQFq5zcAs
