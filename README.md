@@ -1,18 +1,13 @@
 # Automatic License Plate Recognition (ALPR) Using YOLOv11 🚗
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)
-![YOLO](https://img.shields.io/badge/YOLO-v11-orange.svg)
-![Roboflow Dataset](https://img.shields.io/badge/Dataset-ALPR--v1-brightgreen.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
-
+ 
 This project implements a YOLOv11-based model for Automatic License Plate Recognition (ALPR) using the ALPR-v1 dataset. The goal is to detect and recognize license plates in images accurately.
 
 ---
 
 ## **Project Overview**
 
-![Project Example]( https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQueDXdPI7O6213se-R2XvrwXirZE5ZK74fBw&s)
-)  
+ 
 *Example: License plate detection and recognition using YOLOv11.*
 
 ---
@@ -35,6 +30,7 @@ This project implements a YOLOv11-based model for Automatic License Plate Recogn
 
 ✅ Deployment:  
    - Includes steps for inference and visualization.
+
 
 ---
 
