@@ -14,8 +14,8 @@ This project implements a YOLOv11-based model for Automatic License Plate Recogn
 
 ## **Dataset**
 
-- **Name**: 
-- **Source**: [roboflow.com](https://universe.roboflow.com/sezgin-koc-3z1r3/license-plates-kwudy/health)
+- **Name**: Alpr
+- **Source**: (https://universe.roboflow.com/sezgin-koc-3z1r3/license-plates-kwudy/health)
 - **Description**: The dataset contains annotated images for license plate detection, enabling robust model training and evaluation.
 
 ---
