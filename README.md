@@ -22,17 +22,14 @@ This project implements a YOLOv11-based model for Automatic License Plate Recogn
 
 ## **Features**
 
-✅ Exploratory Data Analysis:  
-   - Visualize class distribution and analyze image dimensions.
+ 1. Custom CNN for Licence plate detection
+ 2. Yolo V11 implementation
+ 3. Hyperparameters for better results
+ 4. comparative analysis of cnn and yolo v11 , which gives best results in terms of detecting the plates
+ 5. best model undergoes with Ocr model implementation
+ 6. Done Ocr models 1. Tessaract Ocr and EasyOcr
+ 7. plots , results are mentioned in above code 
 
-✅ Training and Evaluation:  
-   - Implements YOLOv11 using the `ultralytics` library for license plate detection.
-
-✅ Deployment:  
-   - Includes steps for inference and visualization.
-
-
----
 
 ## **Installation**
 
