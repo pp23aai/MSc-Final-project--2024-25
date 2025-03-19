@@ -39,4 +39,5 @@ git clone https://github.com/pp23aai/MSc-Final-project--2024-25.git
 cd MSc-Final-project--2024-25
 
 
-collab : https://colab.research.google.com/drive/1vqjoyjLKfPoWzxlUD_BKEXc6JISXXCOH#scrollTo=Hne4WXVsLCce
+collab :  https://colab.research.google.com/drive/1-IC11fEl0l_hizJdbiaPxTJp5dl32o85#scrollTo=ucZN7GHDwfoK
+
